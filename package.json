@@ -1,0 +1,32 @@
+{
+  "name": "paintbox",
+  "version": "1.0.0",
+  "description": "clonning frame for practicing scss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"text sucess\"",
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naeunpark/paintbox.git"
+  },
+  "author": "naeunpark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naeunpark/paintbox/issues"
+  },
+  "homepage": "https://github.com/naeunpark/paintbox#readme",
+  "dependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/register": "^7.13.8",
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  }
+}
