@@ -1,0 +1,68 @@
+@import "_variables.scss";
+
+@mixin main-container {
+    max-width: 1920px;
+    margin: auto;
+}
+
+@mixin sub-text {
+    color: $text-color;
+    font-family: $sub-font;
+    font-size: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@mixin nowrap-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+@mixin half-box-size {
+    width: 50%;
+    height: 100%;
+}
+
+@mixin half-img-box {
+    @include half-box-size;
+    background-position: center;
+    background-size: cover;
+}
+@mixin half-text-box {
+    @include half-box-size;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: $main-font-size;
+        font-weight: 400;
+        width: 50%;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .tag {
+        margin-bottom: 30px;
+    }
+}
+
+@mixin button {
+    border: 1px solid $text-color;
+    transition: background-color .5s linear;
+    span {
+        display: inline-block;
+        padding: $button-padding;
+        &:first-child {
+            padding-right: $button-padding-extra;
+            border-right: 1px solid $text-color;
+        }
+    }
+    &:hover {
+           background-color: $text-color;
+           color: #fff; 
+    }
+}
+
+
